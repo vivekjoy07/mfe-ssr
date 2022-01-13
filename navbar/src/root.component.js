@@ -47,7 +47,7 @@ export default function Root(props) {
         <ThemeProvider theme={theme}>
           <CssBaseline />
           <div ref={inputRef}>
-            <NavBar title={'MFE BJS DEMO'} themeChange={() => handleDarkMode()} />
+            <NavBar title={'MFE DEMO'} themeChange={() => handleDarkMode()} />
           </div>
         </ThemeProvider>
         <Route exact path="/">

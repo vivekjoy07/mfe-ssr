@@ -5,11 +5,11 @@ on:
     branches:
       - master
     paths:
-      - 'packages/navbar/**'
+      - 'navbar/**'
 
 defaults:
   run:
-    working-directory: packages/navbar
+    working-directory: navbar
 
 jobs:
   build: 
