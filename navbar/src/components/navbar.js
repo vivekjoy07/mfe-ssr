@@ -85,23 +85,23 @@ export default function NavBar({ title, themeChange }) {
               <TrainIcon />
             </IconButton>
 
-            {/* <IconButton
+            <IconButton
               aria-label="Pokemon Trainers"
               color="inherit"
               href="/pdp"
               onClick={navigateToUrl}
             >
               <DetailsIcon />
-            </IconButton> */}
+            </IconButton>
             <Typography variant="h6">{count}</Typography>
-            {/* <IconButton
+            <IconButton
               aria-label="github"
               color="inherit"
               target="_blank"
               href="https://github.com/isomorphic-microfrontends"
             >
               <GitHubIcon />
-            </IconButton> */}
+            </IconButton>
           </div>
         </Toolbar>
       </AppBar>

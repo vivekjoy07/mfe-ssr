@@ -13,7 +13,9 @@ app.use('*', (req, res, next) => {
   const importSuffix = developmentMode ? `?ts=${Date.now()}` : ''
 
   const importMapsPromise = getImportMaps({
-    url: 'https://storage.googleapis.com/isomorphic.microfrontends.app/importmap.json',
+    // url: 'https://storage.googleapis.com/isomorphic.microfrontends.app/importmap.json',
+    url: 'https://microfe-bjs-ss.s3.ap-south-1.amazonaws.com/import-map/import-map.json',
+
     nodeKeyFilter(importMapKey) {
       return importMapKey.startsWith('@isomorphic-mf')
     },
