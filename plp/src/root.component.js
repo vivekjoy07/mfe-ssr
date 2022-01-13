@@ -28,6 +28,7 @@ export default function Root(props) {
   return (
     <ThemeProvider theme={theme}>
       <StylesProvider generateClassName={generateClassName}>
+        {/* Plp Provider */}
         <PlpProvider products={props.products}>
           <PlpContainer />
         </PlpProvider>

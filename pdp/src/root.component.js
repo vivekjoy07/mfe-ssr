@@ -28,6 +28,7 @@ export default function Root(props) {
   return (
     <ThemeProvider theme={theme}>
       <StylesProvider generateClassName={generateClassName}>
+        {/* PDP provider */}
         <PdpProvider product={props.product}>
           <PdpContainer />
         </PdpProvider>
