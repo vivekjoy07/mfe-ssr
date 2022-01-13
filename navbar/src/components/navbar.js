@@ -57,7 +57,7 @@ export default function NavBar({ title, themeChange }) {
   }, [])
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar>
           <IconButton
             edge="start"
@@ -85,14 +85,14 @@ export default function NavBar({ title, themeChange }) {
               <TrainIcon />
             </IconButton>
 
-            <IconButton
+            {/* <IconButton
               aria-label="Pokemon Trainers"
               color="inherit"
               href="/pdp"
               onClick={navigateToUrl}
             >
               <DetailsIcon />
-            </IconButton>
+            </IconButton> */}
             <Typography variant="h6">{count}</Typography>
             {/* <IconButton
               aria-label="github"
@@ -105,6 +105,7 @@ export default function NavBar({ title, themeChange }) {
           </div>
         </Toolbar>
       </AppBar>
+      <Toolbar />
     </div>
   )
 }
